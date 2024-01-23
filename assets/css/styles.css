@@ -121,7 +121,7 @@ a {
 }
 
 .navbar__link,
-.action__login {
+.header-action__login {
     padding: 4px 21px;
     font-size: 1.6rem;
     font-weight: 300;
@@ -130,7 +130,7 @@ a {
 
 .navbar__link:hover,
 .navbar--active,
-.action__login:hover {
+.header-action__login:hover {
     text-shadow: 1px 0 0 #ffffff;
 }
 
@@ -146,7 +146,16 @@ a {
     background: #ffffff;
 }
 
-.action__signup {
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 7px;
+}
+
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
 }
