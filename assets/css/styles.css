@@ -26,6 +26,13 @@ a {
     text-decoration: none;
 }
 
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+}
+
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -140,6 +147,7 @@ a {
 
 .logo__brand {
     display: block;
+    font-family: "Sora", sans-serif;
     color: #ffffff;
     font-size: 1.8em;
     font-weight: 400;
@@ -665,7 +673,7 @@ a {
 /* Appointment */
 
 .appointment {
-    margin-top: 85px 0 170px;
+    margin: 85px 0 170px;
 }
 
 .appointment__inner {
@@ -697,4 +705,130 @@ a {
     margin: 18px auto 38px;
     max-width: 617px;
     font-size: 1.6rem;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 100px;
+    background: #10375c;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 22px;
+    color: #a9b3bb;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #2e80ce;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    color: #fff;
+    background: #2e80ce;
+}
+
+.footer__subscribe-desc {
+    max-width: 273px;
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer-form__input {
+    padding: 0 10px;
+    width: 212px;
+    height: 46px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+    color: #ffffff;
+}
+
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer-form__submit {
+    min-width: 108px;
+    --height: 46px;
+    border-radius: 4px;
+    background: #2e80ce;
+    font-size: 1.4rem;
+}
+
+.footer__copyright {
+    padding: 28px 0 42px;
+    border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+    color: #aab3ba;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
 }
